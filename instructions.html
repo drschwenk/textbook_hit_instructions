@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html>
 <body>
+<script>
+var urlParams;
+var match,
+    pl     = /\+/g,  // Regex for replacing addition symbol with a space
+    search = /([^&=]+)=?([^&]*)/g,
+    decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+    query  = window.location.search.substring(1);
+urlParams = {};
+while (match = search.exec(query))
+  urlParams[decode(match[1])] = decode(match[2]);
 
-<h1>HIT Instructions</h1>
+finalLink = "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/build/index.html?url="
++ urlParams.url + "&id=" + urlParams.id + "&assignmentId=" + urlParams.assignmentId + "&hitId=" + urlParams.hitId
+var final = document.createElement('a');
+var finalText = "Skip instructions and begin task";
+final.innerHTML = finalText;
+
+nextLink = "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/textbook_hit_instructions/instructions1.html?url="
++ urlParams.url + "&id=" + urlParams.id + "&assignmentId=" + urlParams.assignmentId + "&hitId=" + urlParams.hitId
+var next = document.createElement('a');
+var nextText = "Next Page";
+next.innerHTML = nextText;
+
+</script>
+<h2>HIT instruction</h2>
+<p>
+    The goal of this task is to label text extracted from a grade-school science textbook. You will be
+    presented with several unlabeled text boxes, and asked to tag text belonging to one of several categories.
+</p>
 <h3>
-<a href= "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/textbook_hit_instructions/instructions1.html">Next page</a>
+    <script type="text/javascript">
+    document.write('<a href="'+nextLink+'">'+nextText+'</a>');
+    </script>
+    <!--<a href= "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/textbook_hit_instructions/instructions1.html">Next page</a>-->
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <script type="text/javascript">
+    document.write('<a href="'+finalLink+'">'+finalText+'</a>');
+    </script>
 </h3>
-<h5>
-description of the task
-</h5>
+
 <img src="https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/textbook_hit_instructions/example_page_images/example_0.png" alt="page 1" style="width:807px;height:900px;">
 </body>
 </html>

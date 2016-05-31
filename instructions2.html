@@ -15,7 +15,7 @@ while (match = search.exec(query))
 desiredLink = "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/build/index.html?url="
 + urlParams.url + "&id=" + urlParams.id + "&assignmentId=" + urlParams.assignmentId + "&hitId=" + urlParams.hitId
 var a = document.createElement('a');
-var desiredText = "test link";
+var desiredText = "Skip instructions and begin task";
 a.innerHTML = desiredText;
 // apend the anchor to the body
 // of course you can append it almost to any other dom element
@@ -23,12 +23,16 @@ a.innerHTML = desiredText;
 // document.getElementsByTagName('body')[0].innerHTML += desiredText.link(desiredLink);
 </script>
 <h2>HIT instruction </h2>
+
 <h3>
-<script type="text/javascript">
-//note that this case can be used only inside the "body" element
-document.write('<a href="'+desiredLink+'">'+desiredText+'</a>');
-</script>
-<!-- <a href= "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/build/index.html?url=Daily_Science_Grade_5_Evan_Moor_149.jpeg&id=149">Start Task </a> -->
+    <a href= "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/textbook_hit_instructions/instructions1.html">Next page</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <script type="text/javascript">
+    document.write('<a href="'+desiredLink+'">'+desiredText+'</a>');
+    </script>
 </h3>
 <img src="https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/textbook_hit_instructions/example_page_images/example_12.png" alt="page 1" style="width:807px;height:900px;">
 </body>
