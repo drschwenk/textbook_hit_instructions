@@ -12,28 +12,49 @@ urlParams = {};
 while (match = search.exec(query))
   urlParams[decode(match[1])] = decode(match[2]);
 
-desiredLink = "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/build/index.html?url="
+finalLink = "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/build/index.html?url="
 + urlParams.url + "&id=" + urlParams.id + "&assignmentId=" + urlParams.assignmentId + "&hitId=" + urlParams.hitId
-var a = document.createElement('a');
-var desiredText = "Skip instructions and begin task";
-a.innerHTML = desiredText;
-// apend the anchor to the body
-// of course you can append it almost to any other dom element
-// document.getElementsByTagName('body')[0].appendChild(a);
-// document.getElementsByTagName('body')[0].innerHTML += desiredText.link(desiredLink);
-</script>
-<h2>HIT instruction </h2>
+var final = document.createElement('a');
+var finalText = "I've read this before- Skip instructions";
+final.innerHTML = finalText;
 
+nextLink = "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/textbook_hit_instructions/instructions3.html?url="
++ urlParams.url + "&id=" + urlParams.id + "&assignmentId=" + urlParams.assignmentId + "&hitId=" + urlParams.hitId
+var next = document.createElement('a');
+var nextText = "Next Page";
+next.innerHTML = nextText;
+
+</script>
+<h2>Example 1</h2>
+<div style="max-width:810px; word-wrap:break-word;">
+    Here is the previous page with the correct labels applied.
+
+    <ul>
+        <li>Headers/Topic boxes will usually appear at the top of the page and
+            provide a title for the section.</li>
+        <li>Discussion boxes are paragraph-level blocks of text that discuss a scientific topic. </li>
+        <li>Definitions will usually appear on the sides of the page. They are a dictionary-like block defining a single word or phrase.</li>
+        <li>This page has a several figure labels. These are usually single words pointing to a drawing or diagram.</li>
+        <li>Anything else on this page, like page numbers, day or week numbers, or information about the books name/copyright
+            should be left as Unlabeled. </li>
+    </ul>
+</div>
+    </div>
+<p> </p>
+<p> </p>
 <h3>
-    <a href= "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/textbook_hit_instructions/instructions1.html">Next page</a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <script type="text/javascript">
-    document.write('<a href="'+desiredLink+'">'+desiredText+'</a>');
+    document.write('<a href="'+nextLink+'">'+nextText+'</a>');
+    </script>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <script type="text/javascript">
+    document.write('<a href="'+finalLink+'">'+finalText+'</a>');
     </script>
 </h3>
-<img src="https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/textbook_hit_instructions/example_page_images/example_12.png" alt="page 1" style="width:807px;height:900px;">
+
+<img src="https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/textbook_hit_instructions/example_page_images/page_3.png" alt="page 1" style="width:807px;height:900px;">
 </body>
 </html>
