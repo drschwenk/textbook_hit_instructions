@@ -15,24 +15,33 @@ while (match = search.exec(query))
 finalLink = "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/build/index.html?url="
 + urlParams.url + "&id=" + urlParams.id + "&assignmentId=" + urlParams.assignmentId + "&hitId=" + urlParams.hitId
 var final = document.createElement('a');
-var finalText = "Begin Task";
+var finalText = "I've read this before- Skip instructions";
 final.innerHTML = finalText;
 
-nextLink = "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/textbook_hit_instructions/instructions_last.html?url="
+nextLink = "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/question_hit_instructions/instructions2_2.html?url="
 + urlParams.url + "&id=" + urlParams.id + "&assignmentId=" + urlParams.assignmentId + "&hitId=" + urlParams.hitId
 var next = document.createElement('a');
 var nextText = "Next Page";
 next.innerHTML = nextText;
 
 </script>
-<h2>End of Instructions</h2>
+<h2>Example 1</h2>
 <div style="max-width:810px; word-wrap:break-word;">
-    Here's the first fully labeled example page again for your reference. These instructions can be reviewed at any time
-    by pressing the 'Review Instructions' button. When you are ready, please proceed to the HIT.
+    Here is the previous page with the correct labels applied.
+
+    <ul>
+        <li>Question A. does not fall into any of the categories. It should be left as Unlabeled</li>
+        <li>The questions should be grouped in the largest batches possible. In this example, the questions are broken down
+        by letter, and then number. Every question belonging to part "B." should be saved as a single question.</li>
+    </ul>
+</div>
     </div>
 <p> </p>
 <p> </p>
 <h3>
+    <script type="text/javascript">
+    document.write('<a href="'+nextLink+'">'+nextText+'</a>');
+    </script>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -42,6 +51,6 @@ next.innerHTML = nextText;
     </script>
 </h3>
 
-<img src="https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/textbook_hit_instructions/example_page_images/page_1.png" alt="page 1" style="width:807px;height:900px;">
+<img src="https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/question_hit_instructions/example_page_images/page_8.png" alt="page 1" style="width:807px;height:900px;">
 </body>
 </html>

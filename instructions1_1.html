@@ -18,28 +18,33 @@ var final = document.createElement('a');
 var finalText = "I've read this before- Skip instructions";
 final.innerHTML = finalText;
 
-nextLink = "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/question_hit_instructions/instructions1_1.html?url="
+nextLink = "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/question_hit_instructions/instructions1_2.html?url="
 + urlParams.url + "&id=" + urlParams.id + "&assignmentId=" + urlParams.assignmentId + "&hitId=" + urlParams.hitId
 var next = document.createElement('a');
 var nextText = "Next Page";
 next.innerHTML = nextText;
 
 </script>
-<h2>HIT Instructions</h2>
+<h2>Building Question Groups</h2>
 <div style="max-width:810px; word-wrap:break-word;">
-    The goal of this task is to identify and label complete questions extracted from a grade-school science book. You will be
-    presented with text highlighted in orange and asked to select the type of question that best describes it.
-    These pre-defined categories are demonstrated in the example pages. If you feel that the question doesn't fit into one of the
-    categories, leave it unlabeled. At the same time you're labeling the questions, you will be grouping the parts of a
-    question together to form complete questions. This is explained in more detail on the following pages.
+Once you have labeled all parts of a given question, you'll mark these pieces as belonging to a given question by
+    pressing the 'Save Question' button, or by pressing the hotkey 'q' on your keyboard. When a question has been saved,
+    the transparency of it's boxes will be reduced to show this. In this example the short answer question A. has been
+    saved. In general, you should use the letters and numbers in the question as a guide when grouping the boxes into
+    questions. The following pages will provide some grouping examples.
     </div>
+<p> </p>
+<p> </p>
+<div style="max-width:810px; word-wrap:break-word;">
+    Once you are done with a page, click the Submit Results button (or press the return key) to complete the HIT and send your results to
+    Mechanical Turk. The next page will show the correct labeling of this text.
+</div>
 <p> </p>
 <p> </p>
 <h3>
     <script type="text/javascript">
     document.write('<a href="'+nextLink+'">'+nextText+'</a>');
     </script>
-    <!--<a href= "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/textbook_hit_instructions/instructions1.html">Next page</a>-->
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -49,6 +54,6 @@ next.innerHTML = nextText;
     </script>
 </h3>
 
-<img src="https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/question_hit_instructions/example_page_images/page_1.png" alt="page 1" style="width:807px;height:900px;">
+<img src="https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/question_hit_instructions/example_page_images/page_2.png" alt="page 1" style="width:807px;height:900px;">
 </body>
 </html>

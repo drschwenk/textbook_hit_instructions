@@ -18,20 +18,23 @@ var final = document.createElement('a');
 var finalText = "I've read this before- Skip instructions";
 final.innerHTML = finalText;
 
-nextLink = "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/question_hit_instructions/instructions1_1.html?url="
+nextLink = "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/question_hit_instructions/instructions2_3.html?url="
 + urlParams.url + "&id=" + urlParams.id + "&assignmentId=" + urlParams.assignmentId + "&hitId=" + urlParams.hitId
 var next = document.createElement('a');
 var nextText = "Next Page";
 next.innerHTML = nextText;
 
 </script>
-<h2>HIT Instructions</h2>
+<h2>Example 1</h2>
 <div style="max-width:810px; word-wrap:break-word;">
-    The goal of this task is to identify and label complete questions extracted from a grade-school science book. You will be
-    presented with text highlighted in orange and asked to select the type of question that best describes it.
-    These pre-defined categories are demonstrated in the example pages. If you feel that the question doesn't fit into one of the
-    categories, leave it unlabeled. At the same time you're labeling the questions, you will be grouping the parts of a
-    question together to form complete questions. This is explained in more detail on the following pages.
+    Here is the previous page with the correct labels applied.
+
+    <ul>
+        <li>The questions should be grouped in the largest batches possible. In this example, the questions are broken down
+            by letter, and then number. Every question belonging to part "B." should be saved as a single question.</li>
+        <li> The four true/false questions and the "part B," instructions are saved as a single group. </li>
+    </ul>
+</div>
     </div>
 <p> </p>
 <p> </p>
@@ -39,7 +42,6 @@ next.innerHTML = nextText;
     <script type="text/javascript">
     document.write('<a href="'+nextLink+'">'+nextText+'</a>');
     </script>
-    <!--<a href= "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/textbook_hit_instructions/instructions1.html">Next page</a>-->
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -49,6 +51,6 @@ next.innerHTML = nextText;
     </script>
 </h3>
 
-<img src="https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/question_hit_instructions/example_page_images/page_1.png" alt="page 1" style="width:807px;height:900px;">
+<img src="https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/question_hit_instructions/example_page_images/page_9.png" alt="page 1" style="width:807px;height:900px;">
 </body>
 </html>
