@@ -18,7 +18,7 @@ var final = document.createElement('a');
 var finalText = "I've read this before- Skip instructions";
 final.innerHTML = finalText;
 
-nextLink = "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/question_hit_instructions/instructions2_3.html?url="
+nextLink = "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/question_hit_instructions/instructions3.html?url="
 + urlParams.url + "&id=" + urlParams.id + "&assignmentId=" + urlParams.assignmentId + "&hitId=" + urlParams.hitId
 var next = document.createElement('a');
 var nextText = "Next Page";
@@ -30,9 +30,10 @@ next.innerHTML = nextText;
     Here is the previous page with the correct labels applied.
 
     <ul>
-        <li>The questions should be grouped in the largest batches possible. In this example, the questions are broken down
-            by letter, and then number. Every question belonging to part "B." should be saved as a single question.</li>
-        <li> The four true/false questions and the "part B," instructions are saved as a single group. </li>
+        <li>The questions should be grouped in the largest batches indicated by the page's hierarchy.
+            In this example, the questions are broken down by letter, and then number.</li>
+        <li> The four true/false questions and the "part B," instructions are saved together as a single group. </li>
+        <li>Question "C." is one group in and of itself. </li>
     </ul>
 </div>
     </div>

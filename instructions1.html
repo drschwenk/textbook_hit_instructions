@@ -18,7 +18,7 @@ var final = document.createElement('a');
 var finalText = "I've read this before- Skip instructions";
 final.innerHTML = finalText;
 
-nextLink = "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/question_hit_instructions/instructions2.html?url="
+nextLink = "https://s3-us-west-2.amazonaws.com/ai2-vision-turk-data/textbook-annotation-test/question_hit_instructions/instructions1_1.html?url="
 + urlParams.url + "&id=" + urlParams.id + "&assignmentId=" + urlParams.assignmentId + "&hitId=" + urlParams.hitId
 var next = document.createElement('a');
 var nextText = "Next Page";
@@ -28,19 +28,11 @@ next.innerHTML = nextText;
 <h2>Assigning Category Labels</h2>
 <div style="max-width:810px; word-wrap:break-word;">
     To assign a category, first select the desired category by clicking one of the buttons on the left under
-    'Select Category.' Then click the question boxes highlighted on the page that are best described by that label.
-    If there are any questions that don't fit into a category, they should
+    'Select Category.' Then click a text box on the described by that label. Its color will change to match the category
+    you selected. If there are any questions that don't fit into a category, they should
     be left unlabeled. After clicking on a  box, its color will change to the match the category
     label you have selected. For speed, the categories are assigned hotkeys corresponding to their number (1-5).
     </div>
-<p> </p>
-<p> </p>
-<div style="max-width:810px; word-wrap:break-word;">
-    Once you are done with a page, click the Submit Results button (or press the return key) to complete the HIT and send your results to
-    Mechanical Turk. The next page will show the correct labeling of this text.
-</div>
-<p> </p>
-<p> </p>
 <h3>
     <script type="text/javascript">
     document.write('<a href="'+nextLink+'">'+nextText+'</a>');
